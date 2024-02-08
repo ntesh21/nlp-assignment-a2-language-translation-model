@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>English to Nepali Translator</h1>
+        <form action="/translate" method="post">
+            <label for="text_to_translate">Enter Source Text(English):</label>
+            <textarea name="text_to_translate" id="text_to_translate" rows="4" cols="50" required></textarea>
+            <input type="submit" value="Translate">
+        </form>
+
+        {% if original_text %}
+        <div class="result">
+            <p><strong>Source Text(English):</strong></p>
+            <p>{{ original_text }}</p>
+
+            <p><strong>Translated Text(Nepali):</strong></p>
+            <p>{{ translated_text }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+
+</html>

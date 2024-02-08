@@ -1,0 +1,35 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #b8dcee;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #c6f1ea;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(170, 217, 142, 0.1);
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select, input {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.result {
+    background-color: #c6f1ea;
+    margin-top: 20px;
+    border-top: 1px solid #92ecc2;
+    padding-top: 10px;
+}
