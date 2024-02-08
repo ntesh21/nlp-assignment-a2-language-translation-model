@@ -96,7 +96,7 @@ This is flask web application allows users to input a text in source language ie
 
 - This web application consists of two web pages - Home Page(*index.html*) and Result Page(*result.html*)
    * Home Page: 
-   ![alt text](./app/staticindex.png?raw=true)
+   ![alt text](./app/static/index.png?raw=true)
    Here user can input text in source language to the text area and result translated text in traget language is shown in result section.
 
   
